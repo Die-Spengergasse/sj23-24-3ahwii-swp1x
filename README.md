@@ -1,11 +1,8 @@
 # SWP3AHWII
 Material und Code zum Unterricht
 
-## h2 überschrift
+## 2023-09-05
 
-### h3 überschrift
+Hausübung: rechts neben dem clickme button ein textinputfield anlegen, dessen text bei Klick als
+listeneintrag an die Liste angehängt wird.
 
-- li von `<ul>`
-
-1) <li> von <ol>
-1) next item  ... 
