@@ -4,11 +4,15 @@ Material und Code zum Unterricht
 
 ## upcoming:
 
-CORS! https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+Markdown: https://www.markdownguide.org/cheat-sheet
+
+CORS https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS  
+**Cross Origin Resource Sharing**
 
 -   akshai: https://youtu.be/tcLW5d0KAYE
 -   wds: https://youtu.be/PNtFSVU-YTI
 -   fireship: https://youtu.be/4KHiSt0oLJ0
+
 
 ## 2023-09-12
 
