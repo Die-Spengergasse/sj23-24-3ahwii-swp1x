@@ -24,6 +24,9 @@ Video: https://youtu.be/f4D50VnO_Gw
 
 Im VSCode: REst-Client Plugin verwenden!
 
+Api doc:
+https://github.com/alexwohlbruck/cat-facts/blob/master/docs/endpoints/facts.md
+
 ## 2023-09-12
 
 Hausübung: rechts neben dem clickme button ein textinputfield anlegen, dessen

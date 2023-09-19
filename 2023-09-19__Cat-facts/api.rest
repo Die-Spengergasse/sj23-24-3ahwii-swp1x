@@ -2,3 +2,6 @@ GET http://cat-fact.herokuapp.com/facts/58e00b5f0aac31001185ed24
 
 ###
 GET http://cat-fact.herokuapp.com/facts
+
+###
+GET http://cat-fact.herokuapp.com/facts/random
