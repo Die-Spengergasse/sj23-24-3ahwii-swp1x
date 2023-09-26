@@ -4,9 +4,6 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-body {
-    border: 1px solid red;
-}
 /* #facts {
  align-self: flex-end;
 }

@@ -1,6 +1,6 @@
 const URL = "https://cat-fact.herokuapp.com/facts/random?amount=";
 const button = document.querySelector("button");
-const numberInput = document.querySelector("#amount");
+const numberInput = document.getElementById("amount");
 const numberFailed = document.getElementById("failed");
 const liste = document.getElementById("liste");
 

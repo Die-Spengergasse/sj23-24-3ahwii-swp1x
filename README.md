@@ -1,22 +1,18 @@
 # SWP3AHWII
 
-Material und Code zum Unterricht
+## Test Termine
+
+-   24.10.
+-   5.12.
+-   23.1. 2024
 
 ## upcoming:
 
--   wie baue ich das Ergebnis vom api in meine website ein?
--   cors (siehe eigenes File)
 
 # Hausübungen:
 
-## 2023-09-19
+## 2023-09-26
 
-Auf github public apis ein Api wählen (ohne auth, ohne cors) und dieses so wie
-im Video gesehen auf eigene Webseite implementieren.
+Flexbox Froggy. Mache die Levels alle durch und lade in Dein Repo einen
+Screenshot vom höchsten Level durch, den Du geschafft hast!
 
-Video: https://youtu.be/f4D50VnO_Gw
-
-Im VSCode: REst-Client Plugin verwenden!
-
-Api doc:
-https://github.com/alexwohlbruck/cat-facts/blob/master/docs/endpoints/facts.md
