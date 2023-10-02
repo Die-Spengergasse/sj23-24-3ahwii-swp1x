@@ -5,7 +5,7 @@
     justify-content: space-evenly;
 }
 body {
-    border: 1px solid red;
+    border: 1px solid rgb(253, 152, 152);
 }
 /* #facts {
  align-self: flex-end;
