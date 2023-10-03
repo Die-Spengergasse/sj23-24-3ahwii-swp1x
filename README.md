@@ -15,8 +15,9 @@ function f (parameter, ... ) {
 
 try {
   // irgendwas wo dann throw passiert
-} catch Error e {
-  // Abhandlung des Problems
+} catch (error) {
+  // Abhandlung des Problems, z.B.:
+  console.log(error);
 }
 ```
 
