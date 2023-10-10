@@ -30,6 +30,6 @@ try {
     einer Schleife 10-20 mal auf, so daß manchmal eine Exception geworfen wird
     und manchmal nicht. Dein Programm soll NIE selber eine Exception werfen!
 
-# PLF Termine im Untis
+# PLF Termine sind im Untis
 
 ## upcoming:
