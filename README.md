@@ -1,34 +1,17 @@
 # SWP3AHWII
 
-## function
+## HÜ v. 10.10.
 
--   Befehl zum Ausführen
--   function hat einen Namen damit man den code öfter ausführen kann!
--   bekommt Parameter
+### Verwende Promises auf einer Website
 
-```js
-function f (parameter, ... ) {
-   // Aktion mit parameter(n) ...
-   throw new Error ("Fehler!");
-   return ergebnis;
-}
+Erstelle dabei mithilfe der Zufallsfunktion Promises die manchmal schiefgehen
+und manchmal nicht.
 
-try {
-  // irgendwas wo dann throw passiert
-} catch (error) {
-  // Abhandlung des Problems, z.B.:
-  console.log(error);
-}
-```
+Die Ereignisse sollen durch botton-click ausgelöst werden
 
-## HÜ 2023-10-03
+Das Ergebnis wird analog wie bei den cat-fats in der website ausgegeben.
 
--   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
-    studieren!
--   Schreibe ein kleines Javascript Programm welches eine Funktion enthält, die
-    bei bestimmten Parametern einen Error wirft. Rufe diese Funktion innerhalb
-    einer Schleife 10-20 mal auf, so daß manchmal eine Exception geworfen wird
-    und manchmal nicht. Dein Programm soll NIE selber eine Exception werfen!
+Im Fehlerfall möge die Ausgabe einen roten Hintergrund bekommen!
 
 # PLF Termine sind im Untis
 
