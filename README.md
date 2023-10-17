@@ -2,7 +2,7 @@
 
 ## HÜ vom 17.10. (wichtig für Test)
 
--   css grid garden
+-   css grid garden <https://cssgridgarden.com/>
 -   selbst einen simplen grid mit media-queries basteln
 
 ## upcoming:
