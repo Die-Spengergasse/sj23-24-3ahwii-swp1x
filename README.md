@@ -10,7 +10,9 @@
 17.10
 
 -   Bespr. HÜ (promises)
--   vorb. PLÜ (grid, ein/ausklappen)
+-   vorb. PLÜ
+    -   grid
+    -   ein/ausklappen mit js und styles
 
 24.10.
 
