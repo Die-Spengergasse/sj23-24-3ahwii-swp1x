@@ -1,18 +1,28 @@
 # SWP3AHWII
 
-## HÜ v. 10.10.
+## HÜ vom 17.10. (wichtig für Test)
 
-### Verwende Promises auf einer Website
-
-Erstelle dabei mithilfe der Zufallsfunktion Promises die manchmal schiefgehen
-und manchmal nicht.
-
-Die Ereignisse sollen durch botton-click ausgelöst werden
-
-Das Ergebnis wird analog wie bei den cat-fats in der website ausgegeben.
-
-Im Fehlerfall möge die Ausgabe einen roten Hintergrund bekommen!
-
-# PLF Termine sind im Untis
+-   css grid garden
+-   selbst einen simplen grid mit media-queries basteln
 
 ## upcoming:
+
+17.10
+
+-   Bespr. HÜ (promises)
+-   vorb. PLÜ (grid, ein/ausklappen)
+
+24.10.
+
+-   PLÜ
+
+7.10.
+
+-   PLÜ Bespr.
+-   pokematch (vmtl. bis Weihnachten)
+
+Ausblick 2024:
+
+-   backend / express
+-   netlify
+-   bun.js
