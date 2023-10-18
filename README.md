@@ -18,9 +18,12 @@
 
 -   PLÜ
 
-7.10.
+31.10: Ferien
+
+7.11.
 
 -   PLÜ Bespr.
+-   css selektoren recap / css diner
 -   pokematch (vmtl. bis Weihnachten)
 
 Ausblick 2024:
