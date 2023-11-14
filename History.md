@@ -1,5 +1,7 @@
 # Historie zum Unterricht - revers chronologisch
 
+Hier ist der Volltext, kurz und übersichtlich im Lehrstoff.md
+
 ## HÜ vom 17.10. (wichtig für Test)
 
 -   css grid garden <https://cssgridgarden.com/>
