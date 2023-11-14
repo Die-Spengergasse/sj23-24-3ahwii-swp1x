@@ -1,30 +1,18 @@
 # SWP3AHWII
 
-## HÜ vom 17.10. (wichtig für Test)
+HÜ vom 7.11.
 
--   css grid garden <https://cssgridgarden.com/>
--   selbst einen simplen grid mit media-queries basteln
+-   node debugging erforschen
+-   ich werde durchgehen
 
-## upcoming:
-
-17.10
-
--   Bespr. HÜ (promises)
--   vorb. PLÜ
-    -   grid
-    -   ein/ausklappen mit js und styles
-
-24.10.
-
--   PLÜ
-
-31.10: Ferien
-
-7.11.
+    7.11.
 
 -   PLÜ Bespr.
+-   node introduction?!
 -   css selektoren recap / css diner
 -   pokematch (vmtl. bis Weihnachten)
+
+## upcoming:
 
 Ausblick 2024:
 

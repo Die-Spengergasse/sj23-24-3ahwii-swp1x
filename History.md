@@ -1,5 +1,10 @@
 # Historie zum Unterricht - revers chronologisch
 
+## HÜ vom 17.10. (wichtig für Test)
+
+-   css grid garden <https://cssgridgarden.com/>
+-   selbst einen simplen grid mit media-queries basteln
+
 ## HÜ v. 10.10.
 
 ### Verwende Promises auf einer Website
