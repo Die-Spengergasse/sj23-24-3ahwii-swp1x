@@ -1,0 +1,122 @@
+body {
+    background-color: #5286c1;
+    width: 875px;
+    font-family: Arial, Roboto, sans-serif;
+    font-size: 0.95rem;
+    color: #fff;
+    margin: auto;
+}
+h2 {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+article h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.news-section article p {
+    visibility: hidden;
+    /* transition: visibility 1s, position 1s; */
+    position: absolute;
+}
+.news-section article {
+    padding: 0 0.5em;
+}
+.news-section {
+    display: grid;
+    grid-template-columns: 20% auto;
+    background-color: #5a8bc4;
+}
+.italic {
+    font-style: italic;
+}
+.news-section > h2 {
+    color: #222222;
+    text-align: right;
+    padding-right: 1em;
+}
+.news-section h2.einrichten {
+    background-color: #5286c1;
+}
+header {
+    text-align: center;
+}
+.header2 {
+    margin-bottom: 2em;
+    text-align: unset;
+}
+.news-span {
+    margin: 0px 85px;
+}
+.beside-svg {
+    position: relative;
+    bottom: 0.9em;
+    padding: 0px 7px;
+}
+nav ul li {
+    display: inline;
+    padding: 0px 9px;
+}
+nav ul {
+    background-color: #4371a3;
+    display: flex;
+}
+.darkback {
+    background-color: #4371a3;
+}
+footer {
+    background-color: #12375c;
+}
+.rubrik {
+    color: #222222;
+}
+.top-newsvideos {
+    display: grid;
+    grid-template-columns: repeat(5, 171px);
+    margin: 20px 0;
+    gap: 5px;
+}
+.top-newsvideos img {
+    max-width: 100%;
+}
+.top-newsvideos > h3 {
+    font-weight: unset;
+}
+.top-newsvideos > h3:nth-of-type(1) {
+    grid-column: 1/2;
+    color: black;
+    text-align: center;
+}
+.top-newsvideos > h3:nth-of-type(2) {
+    grid-column: 2/6;
+    text-align: right;
+    padding-right: 7px;
+}
+.bildergrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "ape fli fli gert sch"
+        "ape ver tis tis sch";
+    gap: 5px;
+    margin: 20px 0;
+}
+.appell {
+    grid-area: ape;
+}
+.flieger {
+    grid-area: fli;
+}
+.gert {
+    grid-area: gert;
+}
+.scheich {
+    grid-area: sch;
+}
+.verstappen {
+    grid-area: ver;
+}
+.tisch {
+    grid-area: tis;
+}
