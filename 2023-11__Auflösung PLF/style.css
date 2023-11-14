@@ -10,6 +10,10 @@ h2 {
     font-size: 1.1rem;
     font-weight: normal;
 }
+section.news-section > h2:hover {
+    rotate: 360deg;
+    transition: rotate 1s;
+}
 article h2:hover {
     text-decoration: underline;
     cursor: pointer;

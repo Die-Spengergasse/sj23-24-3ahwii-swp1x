@@ -1,21 +1,22 @@
 # SWP3AHWII
 
-HÜ vom 7.11.
+## HÜ vom 14.11.
 
--   node debugging erforschen
--   ich werde durchgehen
-
-    7.11.
-
--   PLÜ Bespr.
--   node introduction?!
--   css selektoren recap / css diner
--   pokematch (vmtl. bis Weihnachten)
+1. javascript zum ein/ausklappen eigenständig nachbauen (Eigenverantwortung!)
+2. fehlenden footer nachbauen
+3. Die Paragraphen (`<p>`) in verkehrter Reihenfolge anzeigen! Tipp:
+   `removeChild` sowie `appendChild`
+4. w3c validator verwenden!
+5. als formatter für html "Default Language Features" einstellen
 
 ## upcoming:
 
-Ausblick 2024:
+-   css diner
+-   pokematch (vmtl. bis Weihnachten)
 
+## Ausblick 2024:
+
+-   Klassen selbst erstellen
 -   backend / express
 -   netlify
 -   bun.js

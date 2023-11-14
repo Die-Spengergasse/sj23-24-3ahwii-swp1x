@@ -2,6 +2,13 @@
 
 Hier ist der Volltext, kurz und übersichtlich im Lehrstoff.md
 
+## INhalte 14.11.
+
+-   orf seite html aufbau (struktur) HÜ vom 7.11.
+-   w3c validator
+-   css selektoren recap / css diner
+-   vscode workspaces
+
 ## HÜ vom 17.10. (wichtig für Test)
 
 -   css grid garden <https://cssgridgarden.com/>
