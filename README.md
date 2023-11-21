@@ -12,6 +12,10 @@
 -   map funktion, die andere werte liefert, zB "Hallo ${w}" -> neues array
 -   filter funktion: boolean
 -   string - split / join
+-   some (func: boolean)
+-   reverse
+-   reduce
+-   a = [...arr]
 
 -   Ordnung machen in den Repos
 
