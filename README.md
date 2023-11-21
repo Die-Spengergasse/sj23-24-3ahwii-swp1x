@@ -1,5 +1,7 @@
 # SWP3AHWII
 
+<https://classroom.github.com/a/1BDdh1KI>
+
 -   Ordnung machen in den Repos
 
 ## HÜ vom 14.11.
