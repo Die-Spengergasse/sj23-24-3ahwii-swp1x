@@ -2,6 +2,17 @@
 
 <https://classroom.github.com/a/1BDdh1KI>
 
+-   indexof (einmal normal, einmal mit nicht existierendem)
+-   push /unshift arr.push(7)
+-   pop /shift
+-   includes
+-   slice
+-   splice
+-   of / bzw. in
+-   map funktion, die andere werte liefert, zB "Hallo ${w}" -> neues array
+-   filter funktion: boolean
+-   string - split / join
+
 -   Ordnung machen in den Repos
 
 ## HÜ vom 14.11.
