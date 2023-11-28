@@ -1,5 +1,15 @@
 # SWP3AHWII
 
+## 28. Nov
+
+Vorbereitung Test und HÜ
+
+<https://classroom.github.com/a/0FNpG41m>
+
+(Arrays 2nd)
+
+## 21. Nov:
+
 <https://classroom.github.com/a/1BDdh1KI>
 
 -   indexof (einmal normal, einmal mit nicht existierendem)
