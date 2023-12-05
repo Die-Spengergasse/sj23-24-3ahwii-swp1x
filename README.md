@@ -1,5 +1,9 @@
 # SWP3AHWII
 
+## 5. Dez. PLF2
+
+Classroom: <https://classroom.github.com/a/cW3-DK3E>
+
 ## 28. Nov
 
 Vorbereitung Test und HÜ
