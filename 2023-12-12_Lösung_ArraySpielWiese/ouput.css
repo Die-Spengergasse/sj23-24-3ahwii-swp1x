@@ -1,0 +1,20 @@
+div.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 0.5em;
+}
+div.samples {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 0.5em;
+}
+section.output {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2em;
+}
+section.output textarea {
+    text-align: center;
+    width: 80%;
+}
