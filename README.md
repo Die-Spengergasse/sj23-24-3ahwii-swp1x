@@ -3,11 +3,11 @@
 ## 12. Dez Korrektur PLF
 
 -   output.publish
+-   Exception beim Laden des scripts (ceyda)
 -   Dreieckstausch
 -   event listener debuggen
 -   getinput -- ideen dazu! (eval, value, element)
 -   nochmal debug: anastasia: slice!
--   Exception beim Laden des scripts (ceyda)
 -   camelcase!
 
 ## 5. Dez. PLF2
