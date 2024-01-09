@@ -25,3 +25,11 @@ class Person {
 }
 p = new Person('Hans', 80, 1.8);
 console.log(p.gewicht);
+
+a = [
+    ['Tim', 70, 180],
+    ['Branka', 50, 160],
+];
+
+b = a.map((arr) => new Person(...arr));
+b.forEach((p) => console.log(p.toString()));
