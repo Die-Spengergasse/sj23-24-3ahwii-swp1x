@@ -1,5 +1,13 @@
 # SWP3AHWII
 
+## HÜ vom 9.1.
+
+-   Person Klasse fertig (set groesse, get bmi)
+-   groesse: min: 50cm, max 300cm!
+-   bmi auf 1 Nachkommastelle runden
+-   3 Tests
+-   Teste auch, ob exception geworfen wurde!
+
 ## git commit geht nicht
 
 -   git config --global user.email "me@example.org"

@@ -19,6 +19,9 @@ class Person {
     get gewicht() {
         return this.#gewicht;
     }
+    toString() {
+        return `${this.name} wiegt ${this.gewicht} kg und ist ${this.groesse} m groß`;
+    }
 }
 p = new Person('Hans', 80, 1.8);
 console.log(p.gewicht);
