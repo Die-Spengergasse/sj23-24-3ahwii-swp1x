@@ -1,5 +1,19 @@
 # Lehrstoff rev. chron.
 
+### feb
+
+-   promise
+
+### jänner
+
+-   klassen
+-   member / attribute
+-   getter / setter
+
+### dez
+
+-   arrays und array-methoden
+
 ### nov
 
 -   html struktur
