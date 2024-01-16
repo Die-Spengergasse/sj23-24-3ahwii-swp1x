@@ -1,5 +1,12 @@
 # SWP3AHWII
 
+## SÜ + HÜ vom 16.1.
+
+-   Klasse erweitern auf Geschlecht
+-   Unter / Normal / Übergewicht ausgeben
+-   toString Methode mit backticks
+-   Eingabemaske mit "berechnen" button
+
 ## HÜ vom 9.1.
 
 -   Person Klasse fertig (set groesse, get bmi)
