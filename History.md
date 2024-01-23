@@ -4,6 +4,27 @@ Hier ist der Volltext, kopiert aus README.md
 
 kurz und übersichtlich im Lehrstoff.md
 
+## SÜ + HÜ vom 16.1.
+
+-   Klasse erweitern auf Geschlecht
+-   Unter / Normal / Übergewicht ausgeben
+-   toString Methode mit backticks
+-   Eingabemaske mit "berechnen" button
+
+## HÜ vom 9.1.
+
+-   Person Klasse fertig (set groesse, get bmi)
+-   groesse: min: 50cm, max 300cm!
+-   bmi auf 1 Nachkommastelle runden
+-   3 Tests
+-   Teste auch, ob exception geworfen wurde!
+
+## 9. Jänner
+
+-   wh funktionen
+-   class!
+-   person - bmi
+
 ## 19. Dez GRG krank, entfallen
 
 ## 12. Dez Korrektur PLF

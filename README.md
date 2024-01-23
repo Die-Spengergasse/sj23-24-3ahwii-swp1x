@@ -1,37 +1,15 @@
 # SWP3AHWII
 
-## SÜ + HÜ vom 16.1.
+## Korr PLF
 
--   Klasse erweitern auf Geschlecht
--   Unter / Normal / Übergewicht ausgeben
--   toString Methode mit backticks
--   Eingabemaske mit "berechnen" button
-
-## HÜ vom 9.1.
-
--   Person Klasse fertig (set groesse, get bmi)
--   groesse: min: 50cm, max 300cm!
--   bmi auf 1 Nachkommastelle runden
--   3 Tests
--   Teste auch, ob exception geworfen wurde!
-
-## git commit geht nicht
-
--   git config --global user.email "me@example.org"
--   git config --global user.name "Maria Musterfrau"
-
-"global" kann man weglassen, dann ist es nur für das aktuelle Verzeichnis
-
-## 9. Jänner
-
--   wh funktionen
--   class!
--   person - bmi
--   array - sort
--   promise deep dive?
+-   WH naming conventions! groß / klein und Umlaute
+-   WH Klassen, Konstruktor, private, get, set!
+-   korr plf ausgehend von seid / backend und ceyda frontend
 
 ## upcoming:
 
+-   array - sort
+-   promise deep dive?
 -   css diner
 -   pokematch (vmtl. bis Weihnachten)
 -   nochmal promise
@@ -42,3 +20,10 @@
 -   backend / express
 -   netlify
 -   bun.js / astro?
+
+## git commit geht nicht
+
+-   git config --global user.email "me@example.org"
+-   git config --global user.name "Maria Musterfrau"
+
+"global" kann man weglassen, dann ist es nur für das aktuelle Verzeichnis
