@@ -2,41 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- von ceyda arslan -->
-    <label for="einwerfen"></label>
-    <input type="number" id="€" placeholder="einwerfen">
-
-    <label for="ziel">Ziel einstellen</label>
-    <select name="Ziel einstellen" id="ziel" placeholder="Ziel einstellen"></select>
-
-    <label for="anzahlPersonen">Anzahl Personen</label>
-    <input type="number" id="anzahlPersonen" placeholder="Anzahl Personen">
-
-    <label for="einnahmenGesamt">gesamte Einnahmen</label>
-
-    <button onclick="ticketKaufen()">Ticket kaufen</button>
+  <label>Geld einwerfen:
+    <input type="number" id="einwerfenBetrag" placeholder="Betrag">
+    <button type="button" id="einwerfenButton">Einwurf</button>
+  </label>
+  <!-- const einwerfenInput = document.getElementById('einwerfen');
+  const zielSelect = document.getElementById('ziel');
+  const anzahlPersonenInput = document.getElementById('anzahlPersonen');
+  const fahrpreisSpan = document.getElementById('fahrpreis');
+  const guthabenSpan = document.getElementById('guthaben');
+  const ticketAusgabeTextarea = document.getElementById('ticketAusgabe');
+  const einnahmenSpan = document.getElementById('einnahmen'); -->
+  <label>Ziel einstellen:
+    <select id="ziel" name="ziel">
+      <!-- TODO: alle Options mittels JavaScript einfügen -->
+      <option value="Salzburg">Salzburg</option>
+      <option value="Innsbruck">Innsbruck</option>
+      <option value="Klagenfurt">Klagenfurt</option>
+      <option value="Graz">Graz</option>
+      <option value="Bregenz">Bregenz</option>
+    </select>
+  </label>
+  <label>Anzahl Personen:
+    <input type="number" id="anzahlPersonen" placeholder="Anzahl Personen" min="1" max="10">
+  </label>
+  <label>Fahrpreis:
+    <span id="fahrpreis">-</span>
+  </label>
+  <label>Guthaben:
+    <span id="guthaben">0</span>
+  </label>
+  <span>Ticketausgabe:
+  </span>
+  <pre id="ticketAusgabe">
+      Noch keine Ausgabe
+    </pre>
+  <label>Gesamte Einnahmen:
+    <span id="einnahmen">0</span>
+  </label>
+  <button onclick="ticketKaufenClickHandler()">Ticket kaufen</button>
 </body>
 
 </html>
-
 <!--
 /*
-
 - Man kann das Fahrziel einstellen, in einem `select` Feld.
 - Man kann die Anzahl der Fahrgäste einstellen (1-10)
 - man kann den Button `ticketKaufen()` drücken, dann wird ein Ticket gedruckt.
-
 ## Bonusufgabe html Benutzeroberfläche:
-
 Elemente der Benutzeroberfläche:
-
 - einwerfen (input type=numer ... submit)
 - ziel einstellen (option / select)
 - anzahl Personen einstellen
@@ -48,7 +70,6 @@ Elemente der Benutzeroberfläche:
 Ticketkauf (`#einnahmenGesamt`)
 - button "Ticket Kaufen" (wenn das Geld reicht wird Ticket gedruckt und die
 `#einnahmenGesamt` vergrößern sich entsprechend)
-
 ## gutes Gelingen!
 */
  -->

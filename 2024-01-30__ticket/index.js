@@ -27,6 +27,12 @@ class TicketAutomat {
     get eingeworfen() {
         return this.#eingeworfen;
     }
+    get ziel() {
+        return this.#ziel;
+    }
+    get gesamtPreis() {
+        return zieleUndPreise[this.#ziel] * this.#anzahlPersonen;
+    }
     anzahlEinstellen(wieviele) {
         if (wieviele < 1 || wieviele > 10) {
             throw new Error('falsche Anzahl Personnen');
@@ -34,7 +40,6 @@ class TicketAutomat {
         this.#anzahlPersonen = wieviele;
     }
     ticketKaufen() {
-        // TODO
         // wirft evtl. einen Fehler
         const ticket = new Ticket(
             this.#anzahlPersonen,
@@ -46,7 +51,7 @@ class TicketAutomat {
     }
 }
 const zieleUndPreise = {
-    Salzbug: 30,
+    Salzburg: 30,
     Innsbruck: 45,
     Klagenfurt: 40,
     Graz: 25,
@@ -57,7 +62,6 @@ class Ticket {
     #ziel;
     #gegeben;
     #summe;
-
     constructor(anzahl, ziel, gegeben) {
         this.#anzahlPersonen = anzahl;
         this.#ziel = ziel;
@@ -84,7 +88,42 @@ Restgeld: € ${this.#gegeben - this.#summe},-
 ===============================`;
     }
 }
-
+function ticketKaufenClickHandler() {
+    console.log('ticketKaufenClickHandler');
+    try {
+        const ticket = automat.ticketKaufen();
+        ticketAusgabeTextarea.textContent = ticket.toString();
+    } catch (error) {
+        console.error(error.message);
+        ticketAusgabeTextarea.textContent = `Fehler: ${error.message}`;
+    }
+    updateUI();
+}
 automat = new TicketAutomat(150);
 automat.anzahlEinstellen(2);
 automat.zielEinstellen('Graz');
+const einwerfenInput = document.getElementById('einwerfenBetrag');
+const einwerfenButton = document.getElementById('einwerfenButton');
+einwerfenButton.addEventListener('click', () => {
+    try {
+        automat.einwerfen(parseFloat(einwerfenInput.value));
+        guthabenSpan.textContent = automat.eingeworfen;
+    } catch (error) {
+        console.error(error.message);
+    }
+});
+const zielSelect = document.getElementById('ziel');
+const anzahlPersonenInput = document.getElementById('anzahlPersonen');
+const fahrpreisSpan = document.getElementById('fahrpreis');
+const guthabenSpan = document.getElementById('guthaben');
+const ticketAusgabeTextarea = document.getElementById('ticketAusgabe');
+const einnahmenSpan = document.getElementById('einnahmen');
+function updateUI() {
+    automat.zielEinstellen(zielSelect.value);
+    automat.anzahlEinstellen(anzahlPersonenInput.value);
+    fahrpreisSpan.textContent = automat.gesamtPreis;
+    einnahmenSpan.textContent = automat.einnahmenGesamt;
+}
+zielSelect.addEventListener('change', updateUI);
+anzahlPersonenInput.addEventListener('input', updateUI);
+updateUI();
