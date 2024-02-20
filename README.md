@@ -1,5 +1,11 @@
 # SWP3AHWII
 
+# hü vom 20.2.
+
+-   prisma.io
+-   evtl. projekt datenschema in prisma modellieren
+-   Eigenständig Verbesserungen am Ticketautomat durchführen!
+
 ## hü frontend
 
 Fehler suchen und beheben!!

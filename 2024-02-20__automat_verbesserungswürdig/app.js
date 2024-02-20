@@ -9,6 +9,9 @@ class TicketAutomat {
         this.#ziel = undefined;
     }
     einwerfen(geld) {
+        if (isNaN(geld) || geld < 0) {
+            throw new Error('Dieses Geld nehme ich nicht!');
+        }
         this.#eingeworfen += geld;
     }
     zielEinstellen(ziel) {
@@ -46,6 +49,9 @@ class TicketAutomat {
             this.#ziel,
             this.#eingeworfen
         );
+        // Guthaben zurücksetzen
+        this.#eingeworfen = 0;
+
         this.#einnahmenGesamt += ticket.summe;
         return ticket;
     }
@@ -88,6 +94,12 @@ Restgeld: € ${this.#gegeben - this.#summe},-
 ===============================`;
     }
 }
+function reset() {
+    updateUI();
+    // ticketAusgabeTextarea.textContent = '';
+    // einwerfenInput.textContent = "";
+    // anzahlPersonenInput.textContent = "";
+}
 function ticketKaufenClickHandler() {
     console.log('ticketKaufenClickHandler');
     try {
@@ -97,6 +109,10 @@ function ticketKaufenClickHandler() {
         console.error(error.message);
         ticketAusgabeTextarea.textContent = `Fehler: ${error.message}`;
     }
+
+    // Guthaben im HTML aktualisieren
+    guthabenSpan.textContent = automat.eingeworfen;
+
     updateUI();
 }
 automat = new TicketAutomat(150);
@@ -109,7 +125,7 @@ einwerfenButton.addEventListener('click', () => {
         automat.einwerfen(parseFloat(einwerfenInput.value));
         guthabenSpan.textContent = automat.eingeworfen;
     } catch (error) {
-        console.error(error.message);
+        ticketAusgabeTextarea.textContent = error.message;
     }
 });
 const zielSelect = document.getElementById('ziel');

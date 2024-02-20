@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <script src="index.js" defer></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <label>Geld einwerfen:
-    <input type="number" id="einwerfenBetrag" placeholder="Betrag">
+    <input type="number" id="einwerfenBetrag" placeholder="Betrag" />
     <button type="button" id="einwerfenButton">Einwurf</button>
   </label>
   <!-- const einwerfenInput = document.getElementById('einwerfen');
@@ -32,7 +32,7 @@
     </select>
   </label>
   <label>Anzahl Personen:
-    <input type="number" id="anzahlPersonen" placeholder="Anzahl Personen" min="1" max="10">
+    <input type="number" id="anzahlPersonen" placeholder="Anzahl Personen" min="1" max="10" />
   </label>
   <label>Fahrpreis:
     <span id="fahrpreis">-</span>
@@ -40,8 +40,7 @@
   <label>Guthaben:
     <span id="guthaben">0</span>
   </label>
-  <span>Ticketausgabe:
-  </span>
+  <span>Ticketausgabe: </span>
   <pre id="ticketAusgabe">
       Noch keine Ausgabe
     </pre>
@@ -49,6 +48,7 @@
     <span id="einnahmen">0</span>
   </label>
   <button onclick="ticketKaufenClickHandler()">Ticket kaufen</button>
+  <button type="reset" onclick="reset()">Neuer Kunde</button>
 </body>
 
 </html>
