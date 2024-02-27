@@ -1,0 +1,40 @@
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model User {
+    id           String        @id @default(cuid())
+    email        String        @unique
+    name         String
+    password     String
+    accounts     Account[]
+    transactions Transaction[]
+}
+
+model Account {
+    id              String        @id @default(cuid())
+    title           String
+    balance         Int
+    user            User          @relation(fields: [userId], references: [id])
+    userId          String
+    transactionFrom Transaction[] @relation(name: "transfrom")
+    transactionTo   Transaction[] @relation(name: "transto")
+}
+
+model Transaction {
+    id            String   @id @default(cuid())
+    amount        Int
+    currency      String
+    date          DateTime @default(now())
+    initiator     User     @relation(fields: [initiatorId], references: [id])
+    initiatorId   String
+    accountFrom   Account  @relation(name: "transfrom", fields: [accountFromId], references: [id])
+    accountFromId String
+    accountTo     Account  @relation(name: "transto", fields: [accountToId], references: [id])
+    accountToId   String
+}

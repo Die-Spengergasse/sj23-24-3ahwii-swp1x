@@ -1,5 +1,9 @@
 # SWP3AHWII
 
+# hü vom 27.2.
+
+Prisma! - db push / migrate / validate / format
+
 # hü vom 20.2.
 
 -   prisma.io
