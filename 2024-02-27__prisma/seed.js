@@ -11,10 +11,15 @@ async function main() {
     if (createUsers < 0) createUsers = 0;
     for (let i = 0; i < createUsers; i++) {
         try {
+            const first = fakerDE.person.firstName();
+            const last = fakerDE.person.lastName();
             await prisma.user.create({
                 data: {
-                    email: fakerDE.internet.email(),
-                    name: fakerDE.person.fullName(),
+                    email: fakerDE.internet.email({
+                        firstName: first,
+                        lastName: last,
+                    }),
+                    name: `${first} ${last}`,
                     password: fakerDE.internet.password(),
                 },
             });
@@ -39,7 +44,6 @@ async function main() {
             await prisma.account.create({
                 data: {
                     title: fakerDE.finance.accountName(),
-                    balance: Math.floor(fakerDE.finance.amount()),
                     user: {
                         connect: {
                             id: uids[Math.floor(Math.random() * uids.length)],
@@ -69,7 +73,6 @@ async function main() {
             await prisma.transaction.create({
                 data: {
                     amount: Math.floor(fakerDE.finance.amount()),
-                    currency: fakerDE.finance.currency()['name'],
                     initiator: {
                         connect: {
                             id: uids[Math.floor(Math.random() * uids.length)],

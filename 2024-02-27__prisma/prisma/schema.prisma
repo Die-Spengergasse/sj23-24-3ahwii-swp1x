@@ -17,19 +17,17 @@ model User {
 }
 
 model Account {
-    id              Int           @id @default(autoincrement())
-    title           String
-    balance         Int
-    user            User          @relation(fields: [userId], references: [id])
-    userId          Int
-    transactionFrom Transaction[] @relation(name: "transfrom")
-    transactionTo   Transaction[] @relation(name: "transto")
+    id               Int           @id @default(autoincrement())
+    title            String
+    user             User          @relation(fields: [userId], references: [id])
+    userId           Int
+    transactionsFrom Transaction[] @relation(name: "transfrom")
+    transactionsTo   Transaction[] @relation(name: "transto")
 }
 
 model Transaction {
     id            Int      @id @default(autoincrement())
     amount        Int
-    currency      String
     date          DateTime @default(now())
     initiator     User     @relation(fields: [initiatorId], references: [id])
     initiatorId   Int

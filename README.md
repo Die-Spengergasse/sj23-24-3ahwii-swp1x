@@ -1,5 +1,27 @@
 # SWP3AHWII
 
+## 5.3.
+
+-   Prisma generate / seed
+-   Prisma Client
+-   Prisma Studio
+
+## Stoff PLF1
+
+-   Klassen
+-   Konstruktoren
+-   Prisma
+-   Promises
+-   async / await
+
+## upcoming:
+
+-   array - sort
+-   promise deep dive?
+-   css diner
+-   pokematch (vmtl. bis Weihnachten)
+-   nochmal promise
+
 # hü vom 27.2.
 
 Prisma! - db push / migrate / validate / format
@@ -19,14 +41,6 @@ Fehler suchen und beheben!!
 -   WH naming conventions! groß / klein und Umlaute
 -   WH Klassen, Konstruktor, private, get, set!
 -   korr plf ausgehend von seid / backend und ceyda frontend
-
-## upcoming:
-
--   array - sort
--   promise deep dive?
--   css diner
--   pokematch (vmtl. bis Weihnachten)
--   nochmal promise
 
 ## Ausblick 2024:
 
