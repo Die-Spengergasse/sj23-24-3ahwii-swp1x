@@ -1,5 +1,13 @@
 # SWP3AHWII
 
+## PLF 30.4.
+
+## PLF 12.3.
+
+-   Klassen / Konstruktoren / Getter / Setter
+-   private variablen
+-   Prisma schemas erzeugen
+
 ## 5.3.
 
 -   Prisma generate / seed
