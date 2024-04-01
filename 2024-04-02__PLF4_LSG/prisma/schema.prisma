@@ -1,0 +1,33 @@
+datasource db {
+  url      = "file:./dev.db"
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Benutzer {
+  id        Int         @id @default(autoincrement())
+  Fullname  String
+  Email     String      @unique
+  Watchlist Watchlist[]
+}
+
+model Watchlist {
+  id         Int      @id @default(autoincrement())
+  name       String
+  createdAt  DateTime @default(now())
+  Track      Track[]
+  User       Benutzer @relation(fields: [benutzerId], references: [id])
+  benutzerId Int
+}
+
+model Track {
+  id        Int         @id @default(autoincrement())
+  name      String
+  duration  Int
+  genre     String
+  artist    String
+  WatchList Watchlist[]
+}

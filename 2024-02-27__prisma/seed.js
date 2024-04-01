@@ -94,12 +94,14 @@ async function main() {
             console.log(e.message);
         }
     }
+    throw new Error('FEHLER!');
     const tidsCount = await prisma.transaction.count();
     console.log(
         `${tidsCount} Transactions are in the database. (${createTransactions} created)`
     );
     await prisma.$disconnect();
 }
+console.log('vor main');
 main()
     .then(() => {
         console.log('Seeding done.');
@@ -107,3 +109,4 @@ main()
     .catch((e) => {
         console.error(e.message);
     });
+console.log('nach main');

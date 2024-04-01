@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dump": "echo '.dump' | sqlite3 ./prisma/dev.db"
+        "dump": "echo '.dump' | sqlite3 ./prisma/dev.db",
+        "seed": "node --inspect seed.js"
     },
     "keywords": [],
     "author": "",
