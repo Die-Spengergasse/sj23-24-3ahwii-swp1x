@@ -1,3 +1,4 @@
 *.pdf
 node_modules
 *.db
+*.db-journal
