@@ -75,4 +75,9 @@ async function seed() {
         });
     }
 }
-seed().then(() => console.log('done seeding'));
+function handleError(e) {
+    console.error(`FEHLER: ${e.message}`);
+}
+seed()
+    .then(() => console.log('done seeding'))
+    .catch(handleError);
