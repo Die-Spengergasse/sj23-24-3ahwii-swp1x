@@ -1,22 +1,22 @@
 -- CreateTable
 CREATE TABLE "Benutzer" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "fullname" TEXT NOT NULL,
     "email" TEXT NOT NULL
 );
 
 -- CreateTable
 CREATE TABLE "Watchlist" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "name" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "benutzerId" INTEGER NOT NULL,
+    "benutzerId" TEXT NOT NULL,
     CONSTRAINT "Watchlist_benutzerId_fkey" FOREIGN KEY ("benutzerId") REFERENCES "Benutzer" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
 -- CreateTable
 CREATE TABLE "Track" (
-    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "id" TEXT NOT NULL PRIMARY KEY,
     "name" TEXT NOT NULL,
     "duration" INTEGER NOT NULL,
     "genre" TEXT NOT NULL,
@@ -25,8 +25,8 @@ CREATE TABLE "Track" (
 
 -- CreateTable
 CREATE TABLE "_TrackToWatchlist" (
-    "A" INTEGER NOT NULL,
-    "B" INTEGER NOT NULL,
+    "A" TEXT NOT NULL,
+    "B" TEXT NOT NULL,
     CONSTRAINT "_TrackToWatchlist_A_fkey" FOREIGN KEY ("A") REFERENCES "Track" ("id") ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT "_TrackToWatchlist_B_fkey" FOREIGN KEY ("B") REFERENCES "Watchlist" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );

@@ -1,5 +1,27 @@
 # SWP3AHWII
 
+Feedback HÜ
+nina, viktor: dev.db nicht committen!
+alex / marius: node_modules wieder löschen / merge branch: gut!
+seid: keine commits (who else?)
+benj / luka: auch branch: gut! queries herzeigen?!
+fabian / ali : gute Arbeit an query und seed
+anastasia: gute query, wo sind die commits von den anderen?
+ceyda / branka
+
+
+## Abgabe Repos vom 9.4.
+
+-   Nina
+-   Alex
+-   Seid
+-   Benjamin
+-   Fabian
+-   Anastasia
+-   Ceyda
+
+Nochmal gleiche HÜ!
+
 ## SÜ und HÜ vom 2.4.
 
 README2.md vollenden

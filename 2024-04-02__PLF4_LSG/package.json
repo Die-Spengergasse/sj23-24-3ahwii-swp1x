@@ -5,9 +5,9 @@
     "main": "index.js",
     "scripts": {
         "seed": "npx prisma db seed",
-        "dev-seed": "node --inspect seed.js",
-        "dev": "node --inspect query.js",
-        "run": "node query.js"
+        "seed-dev": "node --inspect seed.js",
+        "query": "node query.js",
+        "query-dev": "node --inspect query.js"
     },
     "keywords": [],
     "author": "",

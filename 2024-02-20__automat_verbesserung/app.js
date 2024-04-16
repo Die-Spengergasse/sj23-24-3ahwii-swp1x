@@ -119,6 +119,17 @@ automat = new TicketAutomat(150);
 automat.anzahlEinstellen(2);
 automat.zielEinstellen('Graz');
 const einwerfenInput = document.getElementById('einwerfenBetrag');
+einwerfenInput.addEventListener('keyup', (e) => {
+    if (e.key != 'Enter') {
+        return;
+    }
+    try {
+        automat.einwerfen(parseFloat(einwerfenInput.value));
+        guthabenSpan.textContent = automat.eingeworfen;
+    } catch (error) {
+        ticketAusgabeTextarea.textContent = error.message;
+    }
+});
 const einwerfenButton = document.getElementById('einwerfenButton');
 einwerfenButton.addEventListener('click', () => {
     try {

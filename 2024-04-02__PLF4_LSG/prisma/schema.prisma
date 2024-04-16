@@ -8,23 +8,25 @@ generator client {
 }
 
 model Benutzer {
-  id         Int         @id @default(autoincrement())
+  id         String      @id @default(cuid())
   fullname   String
   email      String      @unique
   watchLists Watchlist[]
 }
 
 model Watchlist {
-  id         Int      @id @default(autoincrement())
+  id         String   @id @default(cuid())
   name       String
   createdAt  DateTime @default(now())
   tracks     Track[]
   benutzer   Benutzer @relation(fields: [benutzerId], references: [id])
-  benutzerId Int
+  benutzerId String
+
+  @@unique([name, benutzerId])
 }
 
 model Track {
-  id         Int         @id @default(autoincrement())
+  id         String      @id @default(cuid())
   name       String
   duration   Int
   genre      String
