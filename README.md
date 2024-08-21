@@ -99,3 +99,42 @@ Fehler suchen und beheben!!
 - git config --global user.email "<me@example.org>"
 - git config --global user.name "Maria Musterfrau"
     "global" kann man weglassen, dann ist es nur für das aktuelle Verzeichnis
+# Lehrstoff rev. chron
+
+## März
+
+### feb
+
+- prisma
+- promise
+
+### jänner
+
+- klassen
+- member / attribute
+- getter / setter
+
+### dez
+
+- arrays und array-methoden
+
+### nov
+
+- html struktur
+- w3c validator
+- css selektoren
+- vscode workspaces
+
+### okt
+
+- orf website :-(
+- css grid
+- was ist eine function
+- promises die manchmal Fehler werfen
+- flexbox froggy
+
+### sept
+
+- cat facts / Ergebnis der Suche anzeigen
+- onclick -> add Listitem
+- Git Repos
